@@ -18,3 +18,7 @@ network:
 # By default the file have the following option dhcp4: true
 # Once done save and close the file and apply the changes with: sudo netplan apply
 # To verify the changes: ip addr show dev ens3
+
+################# Resources ###############
+# https://ubuntu.com/server/docs/network-configuration
+# https://linuxize.com/post/how-to-configure-static-ip-address-on-ubuntu-18-04/
