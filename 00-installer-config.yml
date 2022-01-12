@@ -1,0 +1,20 @@
+# This is the configuration for the network interface for static ip Address assignment (ens3 is the ethernet interface name )
+# "ip link"  is used for identify the name of the ethernet interface
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens3: 
+      dhcp4: no
+      addresses:
+        - 192.168.121.199/24
+      gateway4: 192.168.121.1
+      nameservers:
+          addresses: [8.8.8.8, 1.1.1.1]
+
+
+# The file are located in /etc/netplan/99_config.yaml
+# By default the file have the following option dhcp4: true
+# Once done save and close the file and apply the changes with: sudo netplan apply
+# To verify the changes: ip addr show dev ens3
