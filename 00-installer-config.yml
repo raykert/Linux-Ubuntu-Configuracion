@@ -1,4 +1,4 @@
-# This is the configuration for the network interface for static ip Address assignment (ens3 is the ethernet interface name )
+# This is the configuration for the network interface for static ip Address assignment (ens3 is the ethernet interface name)
 # "ip link"  is used for identify the name of the ethernet interface
 
 network:
